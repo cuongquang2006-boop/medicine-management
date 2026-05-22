@@ -448,68 +448,6 @@ bool PrescriptionWidget::validateInput()
 }
 
 
-// void PrescriptionWidget::fillFormFromPrescription(
-//     int row
-//     )
-// {
-//     const Prescription& p =
-//         prescriptions[row];
-
-//     patientBox->setCurrentText(
-//         p.patientName
-//         );
-
-//     diseaseBox->setCurrentText(
-//         p.diseaseName
-//         );
-
-//     diagnosisEdit->setText(
-//         p.diagnosis
-//         );
-
-//     medicineTable->setRowCount(0);
-
-//     for(int i = 0;
-//          i < p.medicines.size();
-//          ++i)
-//     {
-//         medicineTable->insertRow(i);
-
-//         const PrescriptionMedicine& m =
-//             p.medicines[i];
-
-//         medicineTable->setItem(
-//             i,0,
-//             new QTableWidgetItem(
-//                 m.medicineName
-//                 )
-//             );
-
-//         medicineTable->setItem(
-//             i,1,
-//             new QTableWidgetItem(
-//                 QString::number(
-//                     m.quantity
-//                     )
-//                 )
-//             );
-
-//         medicineTable->setItem(
-//             i,2,
-//             new QTableWidgetItem(
-//                 m.dosage
-//                 )
-//             );
-
-//         medicineTable->setItem(
-//             i,3,
-//             new QTableWidgetItem(
-//                 m.instruction
-//                 )
-//             );
-//     }
-// }
-
 void PrescriptionWidget::addMedicineRow()
 {
     int row =
