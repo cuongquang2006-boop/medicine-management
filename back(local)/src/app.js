@@ -45,7 +45,7 @@ app.get("/", async(req,res) => {
     }
 });
 
-//test backend
+
 app.get("/ping", (req,res) => {
     console.log("PING HIT!");
     res.status(200).json({
@@ -54,7 +54,6 @@ app.get("/ping", (req,res) => {
     })
 }); 
 
-//link routes 
 app.use("/api/patients", patientRoutes);
 
 app.use("/api/clinics", clinicRoutes);
