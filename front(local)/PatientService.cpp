@@ -27,7 +27,6 @@ void PatientService::fetchPatients()
     manager->get(request);
 }
 
-// load data from backend
 void PatientService::handlePatientsResponse(QNetworkReply* reply)
 {
     if(reply->error() != QNetworkReply::NoError)
@@ -88,7 +87,6 @@ void PatientService::handlePatientsResponse(QNetworkReply* reply)
     reply->deleteLater();
 }
 
-// create
 void PatientService::createPatient(const Patient& patient)
 {
     QUrl url("http://127.0.0.1:3000/api/patients");
@@ -116,7 +114,6 @@ void PatientService::createPatient(const Patient& patient)
     manager->post(request,doc.toJson());
 }
 
-// update
 void PatientService::updatePatient(const Patient& patient)
 {
     QUrl url("http://127.0.0.1:3000/api/patients/"+ QString::number(patient.id));
@@ -144,7 +141,6 @@ void PatientService::updatePatient(const Patient& patient)
     manager->put(request,doc.toJson());
 }
 
-// delete
 void PatientService::deletePatient(int patientId)
 {
     QUrl url( "http://127.0.0.1:3000/api/patients/" + QString::number(patientId));
