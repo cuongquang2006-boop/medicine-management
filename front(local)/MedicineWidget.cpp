@@ -89,9 +89,6 @@ void MedicineWidget::setupSearchArea()
 }
 
 
-// ===============================
-// TABLE
-// ===============================
 void MedicineWidget::setupTable()
 {
     QVBoxLayout* mainLayout =
@@ -131,9 +128,6 @@ void MedicineWidget::setupTable()
 }
 
 
-// ===============================
-// FORM
-// ===============================
 void MedicineWidget::setupForm()
 {
     QVBoxLayout* mainLayout =
@@ -179,9 +173,6 @@ void MedicineWidget::setupForm()
 }
 
 
-// ===============================
-// BUTTONS
-// ===============================
 void MedicineWidget::setupButtons()
 {
     QVBoxLayout* mainLayout =
@@ -214,9 +205,6 @@ void MedicineWidget::setupButtons()
 }
 
 
-// ===============================
-// STYLES
-// ===============================
 void MedicineWidget::setupStyles()
 {
     setStyleSheet(R"(
@@ -348,11 +336,6 @@ void MedicineWidget::setupConnections()
 }
 
 
-
-
-// ===============================
-// REFRESH TABLE
-// ===============================
 void MedicineWidget::refreshTable()
 {
     medicineTable->setRowCount(0);
@@ -403,9 +386,6 @@ void MedicineWidget::refreshTable()
 }
 
 
-// ===============================
-// CLEAR FORM
-// ===============================
 void MedicineWidget::clearForm()
 {
     medicineNameEdit->clear();
@@ -418,9 +398,6 @@ void MedicineWidget::clearForm()
 }
 
 
-// ===============================
-// VALIDATE
-// ===============================
 bool MedicineWidget::validateInput()
 {
     if(medicineNameEdit->text()
@@ -440,9 +417,6 @@ bool MedicineWidget::validateInput()
 }
 
 
-// ===============================
-// FILL FORM
-// ===============================
 void MedicineWidget::fillFormFromTable(int row)
 {
     const Medicine& m = medicines[row];
@@ -461,9 +435,7 @@ void MedicineWidget::fillFormFromTable(int row)
 }
 
 
-// ===============================
-// LOW STOCK
-// ===============================
+
 void MedicineWidget::applyLowStockHighlight()
 {
     for(int row = 0;
