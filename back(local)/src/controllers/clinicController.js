@@ -83,7 +83,7 @@ const updateClinic = async(req,res)=>{
 
     try{
 
-        const id = req.params.id; // lay data tu id gan vao url
+        const id = req.params.id; 
 
         const {
             name,
