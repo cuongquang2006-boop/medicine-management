@@ -1,7 +1,3 @@
-// ===============================
-// MainWindow.cpp
-// ===============================
-
 #include "MainWindow.h"
 
 #include <QWidget>
@@ -21,9 +17,7 @@
 #include <QMessageBox>
 
 
-// ===============================
-// CONSTRUCTOR
-// ===============================
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
@@ -47,9 +41,6 @@ MainWindow::MainWindow(QWidget *parent)
 }
 
 
-// ===============================
-// SETUP UI
-// ===============================
 void MainWindow::setupUI()
 {
     centralWidgetContainer = new QWidget;
@@ -61,15 +52,11 @@ void MainWindow::setupUI()
     rootLayout->setContentsMargins(0,0,0,0);
     rootLayout->setSpacing(0);
 
-    // ===============================
-    // SIDEBAR
-    // ===============================
+    
     sidebarWidget = new QFrame;
     sidebarWidget->setFixedWidth(240);
 
-    // ===============================
-    // RIGHT AREA
-    // ===============================
+
     QWidget* rightWidget = new QWidget;
 
     QVBoxLayout* rightLayout = new QVBoxLayout(rightWidget);
@@ -77,15 +64,11 @@ void MainWindow::setupUI()
     rightLayout->setContentsMargins(0,0,0,0);
     rightLayout->setSpacing(0);
 
-    // ===============================
-    // TOPBAR
-    // ===============================
+    
     topbarWidget = new QFrame;
     topbarWidget->setFixedHeight(70);
 
-    // ===============================
-    // STACK
-    // ===============================
+    
     stack = new QStackedWidget;
 
     rightLayout->addWidget(topbarWidget);
@@ -96,9 +79,6 @@ void MainWindow::setupUI()
 }
 
 
-// ===============================
-// SIDEBAR
-// ===============================
 void MainWindow::setupSidebar()
 {
     QVBoxLayout* layout = new QVBoxLayout(sidebarWidget);
@@ -154,9 +134,6 @@ void MainWindow::setupSidebar()
 }
 
 
-// ===============================
-// TOPBAR
-// ===============================
 void MainWindow::setupTopbar()
 {
     QHBoxLayout* layout = new QHBoxLayout(topbarWidget);
@@ -186,9 +163,6 @@ void MainWindow::setupTopbar()
 }
 
 
-// ===============================
-// PAGES
-// ===============================
 void MainWindow::setupPages()
 {
     dashboardPage     = new DashboardWidget;
@@ -209,9 +183,6 @@ void MainWindow::setupPages()
 }
 
 
-// ===============================
-// CONNECTIONS
-// ===============================
 void MainWindow::setupConnections()
 {
     connect(dashboardBtn,&QPushButton::clicked,
@@ -240,9 +211,6 @@ void MainWindow::setupConnections()
 }
 
 
-// ===============================
-// STYLE
-// ===============================
 void MainWindow::setupStyles()
 {
     setStyleSheet(R"(
@@ -272,9 +240,7 @@ void MainWindow::setupStyles()
 }
 
 
-// ===============================
-// CREATE BUTTON
-// ===============================
+
 QPushButton* MainWindow::createSidebarButton(const QString& text)
 {
     QPushButton* btn = new QPushButton(text);
@@ -313,9 +279,6 @@ QPushButton* MainWindow::createSidebarButton(const QString& text)
 }
 
 
-// ===============================
-// ACTIVE BUTTON
-// ===============================
 void MainWindow::setActiveButton(QPushButton* button)
 {
     for(QPushButton* btn : menuButtons)
@@ -370,9 +333,6 @@ void MainWindow::setActiveButton(QPushButton* button)
 }
 
 
-// ===============================
-// OPEN PAGES
-// ===============================
 void MainWindow::openDashboard()
 {
     stack->setCurrentWidget(dashboardPage);
