@@ -4,76 +4,18 @@ A desktop-based healthcare management application developed with Java Spring Boo
 
 The system allows healthcare staff to manage patients, clinics, diseases, medicines, prescriptions, and user accounts through a centralized dashboard.
 
+
 ## Features
 
-### Authentication System
-
-* User login
-* Role-based user management
-* Account registration and maintenance
-
-### Dashboard
-
-* Overview statistics
-* Patient count
-* Medicine count
-* Clinic count
-* Prescription count
-* Recent prescriptions
-* Low stock medicine monitoring
-
-### Patient Management
-
-* Create patient records
-* Update patient information
-* Delete patients
-* Search patients
-* Filter by clinic and gender
-
-### Clinic Management
-
-* Create and manage clinics
-* Store clinic location and description
-* Search clinic records
-
-### Disease Management
-
-* Manage disease information
-* Link diseases to clinics
-* Store symptoms and descriptions
-* Search and filter diseases
-
-### Medicine Management
-
-* Medicine inventory tracking
-* Stock monitoring
-* Price management
-* Search medicines
-
-### Prescription Management
-
-* Create prescriptions
-* Assign patients and diseases
-* Add multiple medicines
-* Store diagnosis information
-* View prescription history
-
-### User Management
-
-* Create user accounts
-* Manage user roles
-* Update account information
-* Search users
-
-## Project Structure
-
-The project follows a layered architecture:
-
-* Controller Layer
-* Service Layer
-* Repository Layer
-* Entity Layer
-* Database Layer
+- Authentication
+- Dashboard
+- Patient CRUD
+- Clinic CRUD
+- Disease CRUD
+- Medicine CRUD
+- Prescription Management
+- User Management
+- Search & Filter
 
 
 ## Learning Outcomes
