@@ -1,0 +1,36 @@
+services:
+  backend:
+    build: .
+    container_name: backend-container
+
+    ports:
+      - "3000:3000"
+
+    env_file:
+      - .env
+
+    depends_on:
+      - postgres
+
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:17-alpine
+    container_name: postgres-container
+
+    environment:
+      POSTGRES_DB: pharma_data
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
