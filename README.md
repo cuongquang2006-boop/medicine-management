@@ -35,7 +35,7 @@ This project was developed to strengthen practical skills in:
 ## Used
 
 ![Qt](https://img.shields.io/badge/Qt-Frontend-green?style=for-the-badge&logo=qt)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Node.js + Express.js](https://img.shields.io/badge/Node.js%20+%20Express.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ## Deploy
