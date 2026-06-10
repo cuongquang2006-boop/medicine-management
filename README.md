@@ -24,14 +24,13 @@ This project was developed to strengthen practical skills in:
 
 * REST API development
 * Database design
-* Spring Boot architecture
+* Backend development with Spring Boot and Express.js
 * CRUD operations
 * Entity relationships
 * Frontend and backend integration
 * Software architecture organization
 * Healthcare data management
-
-
+  
 ## Used
 
 ![Qt](https://img.shields.io/badge/Qt-Frontend-green?style=for-the-badge&logo=qt)
