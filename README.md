@@ -24,24 +24,22 @@ This project was developed to strengthen practical skills in:
 
 * REST API development
 * Database design
-* Spring Boot architecture
+* Backend development with Spring Boot and Express.js
 * CRUD operations
 * Entity relationships
 * Frontend and backend integration
 * Software architecture organization
 * Healthcare data management
-
-
+  
 ## Used
 
+
 ![Qt](https://img.shields.io/badge/Qt-Frontend-green?style=for-the-badge&logo=qt)
-
-![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)
-
+![Node.js + Express.js](https://img.shields.io/badge/Node.js%20+%20Express.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Java + Spring Boot](https://img.shields.io/badge/Java%20%2B%20Spring%20Boot-Backend-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ## Deploy
 
 ![Render](https://img.shields.io/badge/Render-Backend-46E3B7?style=for-the-badge&logo=render&logoColor=white)
-
 ![Neon](https://img.shields.io/badge/Neon-PostgreSQL-00E599?style=for-the-badge&logo=neon&logoColor=black)
